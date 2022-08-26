@@ -15,7 +15,7 @@ html {
 
 :root {
 
-    --padding-contain: 100px 0;
+    --padding-contain: 50px 0;
 
 }
 
@@ -53,7 +53,8 @@ html {
 
 }
 
-.nav__items, .exit_img{
+.nav__items,
+.exit_img {
 
     display: none;
 
@@ -122,8 +123,71 @@ html {
     color: black;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 32px;
     border: transparent;
+
+}
+
+.social_network {
+
+    display: none;
+
+}
+
+.about {
+
+    color: #222;
+    display: flex;
+    text-align: center;
+
+}
+
+.about__information{
+
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.about h2 {
+
+    padding: 30px 0;
+
+}
+
+.about__img{
+
+    display: none;
+
+}
+
+.catalogue{
+
+    width: 100%;
+
+}
+
+
+.calogue__contain{
+
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-self: flex-start;
+    background: #333;
+    gap: 1em;
+
+}
+
+.calogue__contain div{
+
+    width: 100px;
+    background: rebeccapurple;
+    height: 100px;
+    border: 1px solid green;
+    
 
 }
 
@@ -146,21 +210,20 @@ html {
 
     }
 
-    .nav__items{
+    .nav__items {
 
         display: block;
         list-style: none;
 
     }
 
-    .nav__links{
+    .nav__links {
 
         color: #FFF;
         text-decoration: none;
 
     }
 
-    
 
     .nav__menu {
 
@@ -168,9 +231,53 @@ html {
 
     }
 
-    .hero{
+    .hero_contain {
+
+        gap: 1.5em;
+
+    }
+
+    .hero {
 
         background-size: contain;
+
+    }
+
+    .contain__button {
+
+        display: none;
+
+    }
+
+    .social_network {
+
+        display: block
+    }
+
+    .about{
+
+        text-align: left;
+
+    }
+
+    .about__information {
+
+        align-self: center;
+        width: 60%;
+
+    }
+
+    .about__img {
+
+        width: 50%;
+        display: block;
+
+    }
+
+    .about__img img {
+
+        width: 100%;
+
 
     }
 
