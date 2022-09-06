@@ -41,6 +41,7 @@ html {
     color: #FFF;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/img/banner.jpg");
     background-size: cover;
+    background-position: center;
 
 }
 
@@ -142,7 +143,7 @@ html {
 
 }
 
-.about__information{
+.about__information {
 
     width: 80%;
     margin: 0 auto;
@@ -155,39 +156,91 @@ html {
 
 }
 
-.about__img{
+.about__img {
 
     display: none;
 
 }
 
-.catalogue{
+.catalogue {
 
     width: 100%;
 
 }
 
 
-.calogue__contain{
+.calogue__contain {
 
-    width: 100%;
-    padding: 10px;
+    display: grid;
+    padding: 30px;                                                                                                                                                                                                                                                                  
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    gap: 1em;
+}
+
+.calogue__contain div {
+
+    background: rebeccapurple;
+    border: 1px solid green;
+
+}
+
+.footer {
+
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+        url("/img/footer.jpg");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    align-self: flex-start;
-    background: #333;
+    justify-content: center;
+
+}
+
+
+.footer_contain {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+
+}
+
+.footer_form {
+
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     gap: 1em;
 
 }
 
-.calogue__contain div{
+.footer_form input{
 
-    width: 100px;
-    background: rebeccapurple;
-    height: 100px;
-    border: 1px solid green;
-    
+    border: none;
+    padding: 1.4rem 2rem;
+    line-height: 1.2rem;
+    width: 100%;
+
+}
+
+.footer_form button{
+
+    border: none;
+    padding: 1.5rem 2rem;
+    width: 40%;
+    line-height: 1.2rem;
+    background-color: rgb(73, 73, 73);
+    color: #FFF;
+
+}
+
+.footer__social_network img{
+
+    width: 40px;
 
 }
 
@@ -254,7 +307,7 @@ html {
         display: block
     }
 
-    .about{
+    .about {
 
         text-align: left;
 
@@ -279,6 +332,37 @@ html {
         width: 100%;
 
 
+    }
+
+    .footer_contain{
+
+        gap: 3em;
+
+    }
+
+
+    .footer_form {
+
+        flex-direction: row;
+    
+    }
+
+    .footer_form input{
+
+        width: 70%;
+    
+    }
+
+    .footer_form button{
+
+        width: 30%;
+    
+    }
+
+    .footer__social_network img{
+
+        width: 60px;
+    
     }
 
 }
