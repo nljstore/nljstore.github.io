@@ -3,7 +3,6 @@
 body {
 
     font-family: 'Poppins', sans-serif;
-    
 
 }
 
@@ -39,9 +38,9 @@ html {
     display: grid;
     grid-template-rows: 50px 1fr;
     color: #FFF;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("/img/banner.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/img/banner2.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: right ;
 
 }
 
@@ -81,26 +80,19 @@ html {
     display: grid;
     --padding-contain: 0;
     grid-auto-rows: max-content;
-    text-align: center;
-    justify-items: center;
-    justify-content: center;
+    justify-items: flex-start;
     align-self: center;
-    gap: 1em;
+    gap: 1.5em;
 }
+
+
 
 .contain_title {
 
-    border: 1px solid white;
-    background: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
-    padding: 10px;
-
-}
-
-.hero__title {
-
     padding: 0;
     margin: 0;
-    font-weight: lighter;
+    font-size: 20px;
+    font-weight: 300;
 
 }
 
@@ -119,15 +111,27 @@ html {
 .cta {
 
     display: inline-block;
-    background-color: white;
-    justify-self: center;
-    color: black;
+    background-color: transparent;
+    color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 32px;
-    border: transparent;
+    border: 1.5px solid white;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
 
 }
+
+.cta:active {
+
+    background: white;
+    color: black;
+
+}
+
+
 
 .social_network {
 
@@ -164,8 +168,12 @@ html {
 
 .catalogue {
 
-    
+    position: relative;
     width: 100%;
+    max-width: 100%;
+    background-color: #222;
+    background-image: radial-gradient(#646464 0.5px, #222 0.5px);
+    background-size: 10px 10px;
 
 }
 
@@ -175,9 +183,9 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 3em 1em;
+    gap: 2em 1em;
     padding: 20px;
-    
+
 
 }
 
@@ -190,20 +198,24 @@ html {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     padding: 0;
+    color: #fcfcfc;
+    font-weight: 300;
 }
 
-.img_catalouge{
+.img_catalouge {
 
     width: 100%;
     height: 80%;
     object-fit: cover;
-    
+    object-position: center;
+    border-radius: 20px;
+
 
 }
 
-.catalogue_text{
+.catalogue_text {
 
     margin: 0;
     padding-left: 10px;
@@ -212,6 +224,7 @@ html {
 }
 
 .footer {
+
 
     background-image: linear-gradient(0deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
         url("/img/footer.jpg");
@@ -232,6 +245,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 2em;
+    padding: 30px 0;
 
 }
 
@@ -242,9 +256,10 @@ html {
     width: 80%;
     gap: 1em;
 
+
 }
 
-.footer_form input{
+.footer_form input {
 
     border: none;
     padding: 1.4rem 2rem;
@@ -253,7 +268,7 @@ html {
 
 }
 
-.footer_form button{
+.footer_form button {
 
     border: none;
     padding: 1.5rem 2rem;
@@ -264,7 +279,7 @@ html {
 
 }
 
-.footer__social_network img{
+.footer__social_network img {
 
     width: 40px;
 
@@ -318,7 +333,30 @@ html {
 
     .hero {
 
-        background-size: contain;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .contain_title{
+
+        font-size: 30px;
+        
+
+
+    }
+
+    .contain_title h1{
+
+        margin: 0;
+        font-weight: 400;
+        
+
+    }
+
+    .hero__description{
+
+        font-size: 20px;
 
     }
 
@@ -360,7 +398,7 @@ html {
 
     }
 
-    .footer_contain{
+    .footer_contain {
 
         gap: 3em;
 
@@ -370,25 +408,25 @@ html {
     .footer_form {
 
         flex-direction: row;
-    
+
     }
 
-    .footer_form input{
+    .footer_form input {
 
         width: 70%;
-    
+
     }
 
-    .footer_form button{
+    .footer_form button {
 
         width: 30%;
-    
+
     }
 
-    .footer__social_network img{
+    .footer__social_network img {
 
         width: 60px;
-    
+
     }
 
 }
