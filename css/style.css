@@ -3,7 +3,7 @@
 body {
 
     font-family: 'Poppins', sans-serif;
-    background: #FCFCFC;
+    
 
 }
 
@@ -164,6 +164,7 @@ html {
 
 .catalogue {
 
+    
     width: 100%;
 
 }
@@ -171,17 +172,42 @@ html {
 
 .calogue__contain {
 
-    display: grid;
-    padding: 30px;                                                                                                                                                                                                                                                                  
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: auto;
-    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3em 1em;
+    padding: 20px;
+    
+
 }
 
 .calogue__contain div {
 
-    background: rebeccapurple;
-    border: 1px solid green;
+    border-bottom: 1px solid #ccc;
+    width: 35%;
+    height: 600px;
+    min-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 0;
+}
+
+.img_catalouge{
+
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    
+
+}
+
+.catalogue_text{
+
+    margin: 0;
+    padding-left: 10px;
+    line-height: 25px;
 
 }
 
