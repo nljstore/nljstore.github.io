@@ -40,7 +40,7 @@ html {
     color: #FFF;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("/img/banner2.jpg");
     background-size: cover;
-    background-position: right ;
+    background-position: right;
 
 }
 
@@ -85,8 +85,6 @@ html {
     gap: 1.5em;
 }
 
-
-
 .contain_title {
 
     padding: 0;
@@ -117,10 +115,6 @@ html {
     padding: 10px 20px;
     border-radius: 32px;
     border: 1.5px solid white;
-    justify-items: center;
-    justify-self: center;
-    align-items: center;
-    align-self: center;
 
 }
 
@@ -130,8 +124,6 @@ html {
     color: black;
 
 }
-
-
 
 .social_network {
 
@@ -174,52 +166,46 @@ html {
     background-color: #222;
     background-image: radial-gradient(#646464 0.5px, #222 0.5px);
     background-size: 10px 10px;
+    --padding-contain: 0 0 30px;
+    padding: var(--padding-contain);
 
 }
 
+.contain_singel_catalogue{
 
-.calogue__contain {
+    border-bottom: 1px solid #ccc;
+    margin: 0 20px;
+
+}
+
+.contain_img_catalogue{
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2em 1em;
-    padding: 20px;
+    gap: 2em;
+    padding: 30px 20px;
+    
 
-
-}
-
-.calogue__contain div {
-
-    border-bottom: 1px solid #ccc;
-    width: 35%;
-    height: 600px;
-    min-width: 300px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 0;
-    color: #fcfcfc;
-    font-weight: 300;
 }
 
 .img_catalouge {
 
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    object-position: center;
     border-radius: 20px;
+    max-width: 100%;
+}
 
+.contain_paragrah_catalogue{
+
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    line-height: 1.5;
 
 }
 
-.catalogue_text {
+.contain_paragrah_catalogue {
 
-    margin: 0;
-    padding-left: 10px;
-    line-height: 25px;
+    margin-bottom: 20px ;
 
 }
 
@@ -259,6 +245,12 @@ html {
 
 }
 
+.footer a {
+
+    text-decoration: none;
+
+}
+
 .footer_form input {
 
     border: none;
@@ -285,7 +277,30 @@ html {
 
 }
 
+@media screen and (min-width: 500px){
+
+    .contain_img_catalogue{
+
+        justify-content: space-evenly;
+
+    }
+
+        .img_catalouge{
+
+            flex-grow: 1;
+            max-width: 25%;
+
+        }
+
+}
+
 @media only screen and (min-width: 800px) {
+
+    .hero_contain a {
+
+        text-decoration: none;
+
+    }
 
     .nav a {
 
@@ -318,7 +333,6 @@ html {
 
     }
 
-
     .nav__menu {
 
         display: none;
@@ -338,23 +352,21 @@ html {
 
     }
 
-    .contain_title{
+    .contain_title {
 
-        font-size: 30px;
-        
-
+        font-size: 2.5em;
 
     }
 
-    .contain_title h1{
+    .contain_title h1 {
 
         margin: 0;
         font-weight: 400;
-        
+
 
     }
 
-    .hero__description{
+    .hero__description {
 
         font-size: 20px;
 
@@ -368,7 +380,22 @@ html {
 
     .social_network {
 
-        display: block
+        display: flex;
+        gap: .5em;
+        justify-content: space-around;
+
+    }
+
+    .social_network img{
+
+        width: 3em;
+
+    }
+
+    .img_catalouge{
+
+        max-width: 30%;
+
     }
 
     .about {
