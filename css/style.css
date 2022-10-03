@@ -191,6 +191,7 @@ html {
 .img_catalouge {
 
     border-radius: 20px;
+    max-width: 100%;
     height: 10%;
 }
 
